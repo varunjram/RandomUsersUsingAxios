@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: beige;
+
+}
+
+#preloader {
+  background: black url(/images/infinity-loop.gif) no-repeat center center ;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position:fixed;
+  z-index: 100;
+  
+}
+
+h1 {
+  text-align: center;
+}
+
+.mainContainer {
+  padding: 40px;
+  background-color: beige;
+  margin: 0 auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lorem {
+  color: grey;
+  text-align: justify;
+}
+
+li {
+  list-style-type: none;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+    "image p"
+    "image p1"
+    "image c"
+    "image div2";
+  text-align: :right;
+  width: 25%;
+  margin: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  font-size: large;
+  padding: 0.5rem 0.5rem;
+  font-size: 2rem;
+
+  border-radius: 0.5rem;
+  outline: none;
+  color: darkslategray;
+  justify-content: center;
+  position: absolute;
+  left: 45%;
+}
+
+.search-wrapper::after {
+  content: '🔍';
+  position: relative;
+top: 4px;
+right: 50px;
+}
+
+#searchBar {
+  width: 90%;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  padding: 5px 5px;
+  font-size: 12px;
+  justify-content: center;
+}
+
+img {
+  /* grid-area: image; */
+  max-height: 150px;
+  grid-area: image;
+}

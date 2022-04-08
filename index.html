@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <!-- <div id="preloader"></div> -->
+    <div class="mainContainer">
+      <h1>Random users using Axios</h1>
+
+      <div class="radio-btns">
+        <input type="radio" id="all" name="gender" value="All" />
+        <label for="html">All</label>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Male" />
+        <label for="female">Female</label>
+      <div>
+      <div class="search-wrapper">
+        <input
+          type="text"
+          name="searchBar"
+          placeholder="Search"
+          id="searchBar"
+        />
+      </div>
+      <p class="noOfRecords"></p>
+      <p class="avgage"></p>
+      <label for="sorting"> Sort By:
+        <select name="sorting" id="sortBy">
+        <option class="sortList" value="name">Name</option>
+        <option class="sortList" value="age">Age</option>
+        <!-- <option class="sortList" value="d.o.b">D.O.B</option> -->
+      </select>
+      </label>
+      
+
+  
+
+      <div class="cardContainer"></div>
+
+      <button id="loadMore-btn">Load-More</button>
+    </div>
+
+    <script src="src/index.js"></script>
+
+    <script>
+      let loader = document.querySelector("#preloader");
+
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
